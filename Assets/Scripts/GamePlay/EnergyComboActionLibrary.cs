@@ -41,6 +41,7 @@ namespace Energy.Library
 
         static EnergyComboActionLibrary()
         {
+            // the equality comparer means that different ActionEnergy[] instances with the same values are considered equal
             ActionLibrary =
             new Dictionary<ActionEnergy[], EnergyComboAction>(new EnergyComboAction.EqualityComparer());
         }
